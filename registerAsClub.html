@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register as Club</title>
+<link rel="stylesheet" href="styles/registerAsPlayer.css">
+</head>
+<body>
+
+<h2>Register as Culb Form</h2>
+
+<div class="container">
+  <form onsubmit="return validate()" method="post" name="clubForm" action="registerAsClub_handler.php">
+  <div class="row">
+		<div class="col-25">
+		  <label>Club Name:</label>
+		</div>
+		<div class="col-75">
+		  <input type="text" id="cname" name="clubName" placeholder="Your club..">
+		</div>
+	  </div>
+	  
+	  <div class="row">
+		<div class="col-25">
+		  <label>Contact Person First Name:</label>
+		</div>
+		<div class="col-75">
+		  <input type="text" id="cpfname" name="cpfirstname" placeholder="Your name..">
+		</div>
+	  </div>
+	  
+	  <div class="row">
+		<div class="col-25">
+		  <label for="lname">Contact Person Last Name:</label>
+		</div>
+		<div class="col-75">
+		  <input type="text" id="cplname" name="cplastname" placeholder="Your last name..">
+		</div>
+	  </div>
+	  
+	  <div class="row">
+		<div class="col-25">
+		  <label for="country">Governerate:</label>
+		</div>
+		<div class="col-75">
+		  <select id="country" name="country">
+			<option value="Alexandria">Alexanderia</option>
+			<option value="Cairo">Cairo</option>
+			<option value="Giza">Giza</option>
+			<option value="Damietta">Damietta</option>
+			<option value="port-Saisd">Port-Said</option>
+		  </select>
+		</div>
+	  </div>
+	  
+	  <div class="row">
+		<div class="col-25">
+		  <label for="tel">Mobile:</label>
+		</div>
+		<div class="col-75">
+		  <input type="telephone" id="Tel" name="telephone" placeholder="Write your phone.." >
+		</div>
+	  </div>
+	  
+	  <div class="row">
+		<div class="col-25">
+		  <label for="email">Email:</label>
+		</div>
+		<div class="col-75">
+		  <input type="mail" id="mail" name="mail" placeholder="Write your mail.." >
+		</div>
+	  </div>
+	  
+	  <div class="row">
+		<div class="col-25">
+		  <label >userName :</label>
+		</div>
+		<div class="col-75">
+		  <input type="text" id="username" name="uname" placeholder="Write your mail as user name.." >
+		</div>
+	  </div>
+	  
+	  <div class="row">
+		<div class="col-25">
+		  <label >Password :</label>
+		</div>
+		<div class="col-75">
+		  <input type="text" id="password" name="pword" placeholder="Write your pass 8 chars.." >
+		</div>
+	  </div>
+	  
+	  <div class="row">
+		<div class="col-25">
+		  <label >Confirm password :</label>
+		</div>
+		<div class="col-75">
+		  <input type="text" id="cpassword" name="cpword" placeholder="confirm  your pass not less than 8 chars.." >
+		</div>
+	  </div>
+	  
+	  <div class="row">
+	  <div class="col-25">
+		</div>
+		<div class="col-75">
+		  <input type="submit" value="submit">
+		  <input type="reset" value="clear" onclick="clear2()">
+		</div>
+		
+	  </div>
+  </form>
+  
+  
+</div>
+<script src="script/regAsClub.js">
+
+</script>
+</body>
+</html>
